@@ -63,6 +63,11 @@ ul {
     margin: 0;
 }
 
+.nav-space {
+    height: 10vh;
+    width: 100%;
+}
+
 nav {
     height: 10vh;
     width: 100%;
