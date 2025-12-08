@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Styles/globals.css">
+    <link rel="stylesheet" href="Styles/home.css">
+    <link rel="stylesheet" href="Styles/loader.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap" rel="stylesheet">
+
+    <script src="main.js" defer></script>
+    <title>The Crossing</title>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-inner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div class="homeContainer">
+        <nav id="navbar">
+            <div class="desktop-nav-left">
+                <a href="">HOME</a>
+                <a href="#location" class="extra-nav-links">LOCATION</a>
+            </div>
+            <img src="Images/The Crossing Barbershop.png" class="nav-logo">
+            <div class="desktop-nav-right">
+                <a href="#about" class="extra-nav-links">ABOUT</a>
+                <a href="/Barbers.html" class="nav-book">BOOK</a>
+            </div>
+        </nav>
+            <div class="hero">
+                <div class="call-to-action">
+                    <img src="Images/CrossingLogo.png">
+                    <a href="/Barbers.html"><button>Book With Us</button></a>
+                    <a href="https://www.instagram.com/thecrossingbarbershop"><img src="Images/instagram.png"></a>
+                </div>
+            </div>
+            <div class="about" id="about">
+                <h2>Who We Are</h2>
+                <h1>
+                    The Crossing Barbershop delivers classic cuts, modern styles, and exceptional service right in the heart
+                    of Old Town Burleson, Texas. Our experienced barbers focus on precision, consistency, and creating an
+                    experience that keeps you looking your best.
+                </h1>
+            </div>
+            
+            <div class="location" id="location">
+                <h2>Our Location</h2>
+                <p>Located in historic Old Town Burleson, TX</p>
+            
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107580.07596701411!2d-97.41295590583603!3d32.58279424282405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e69b71372c235%3A0xc646c6bea0506860!2sThe%20Crossing%20Barbershop!5e0!3m2!1sen!2sus!4v1765165628198!5m2!1sen!2sus" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <div class="book" id="book">
+                <h2>Book Your Appointment</h2>
+            
+                <p class="book-phone">Call or text: (817) 229-2314</p>
+            
+                <!--<div class="book-hours">
+                    <p><strong>Hours</strong></p>
+                    <p>Mon – Fri: 9:00 AM – 7:00 PM</p>
+                    <p>Saturday: 9:00 AM – 5:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>-->
+            
+                <a href="/Barbers.html"><button>Book Now</button></a>
+            </div>
+            
+            <footer class="site-footer">
+                <div class="container footer-bottom">
+                <p class="copy">© <span id="year"></span> The Crossing Barbershop. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><img src="Images/facebook.png"></a>
+                    <a href="#" aria-label="Instagram"><img src="Images/instagram.png"></a>
+                </div>
+            </div>
+            </footer>
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+          </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+.portfolio {
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+    margin: 32px;
+}
+
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.bio-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0;
+    max-width: 640px;
+    margin-left: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: transparent;
+    /* let the card bg show */
+    padding: 0;
+    border-top: 1px solid #333;
+    padding-top: 24px;
+}
+
+.portfolio-img {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials img {
+    width: 50px;
+    transition: opacity 0.17s ease-in-out;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}
+
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 7px;
+    background-color: rgb(70, 70, 255);
+    color: white;
+    border-style: none;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    transition: opacity 0.17s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: rgb(70, 70, 255);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.extra-img {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .bio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info {
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .info p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    li .extra-img {
+        display: none;
+    }
+
+    .gallery ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* centers items even when some are hidden */
+        gap: 16px;
+        padding: 0;
+        /* REMOVE default ul padding */
+        margin: 0 auto;
+        list-style: none;
+        /* remove bullets */
+    }
+
+}
