@@ -73,7 +73,7 @@ nav {
     gap: 4rem;
 
     color: white;
-    position: sticky;
+    position: fixed;
     top: 0px;
     border-bottom: 5px solid #252525;
     transition: transform 0.3s ease-in-out;
