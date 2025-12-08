@@ -101,6 +101,14 @@ nav a:hover {
     border-bottom-color: white;
 }
 
+footer a {
+    transition: opacity 0.17s ease-in-out;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
 nav.hide {
     transform: translateY(-150%);
 }
