@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .container {
@@ -15,6 +16,7 @@ body {
     background-color: #141414;
     margin: 0;
     font-family: "TASA Orbiter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
 }
 
 .tasa-orbiter-400 {
