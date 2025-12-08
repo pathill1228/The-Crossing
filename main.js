@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navType = performance.getEntriesByType("navigation")[0].type;
 
     // Only show loader on new loads or refreshes
-    if (navType === "reload") {
+    if (navType === "navigate" || navType === "reload") {
 
         // Minimum time the loader should stay visible (in ms)
         const MIN_TIME = 350; // 1500ms = 1.5 seconds
