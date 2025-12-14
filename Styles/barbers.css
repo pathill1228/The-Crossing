@@ -132,12 +132,12 @@ h4::after {
     }
 
     .gallery ul {
-        height: 250px;
+        height: 300px;
         overflow-y: scroll;
     }
 
     .info {
-        height: 350px;
+        height: 250px;
         overflow-y: scroll;
     }
 
