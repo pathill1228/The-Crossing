@@ -132,7 +132,7 @@ h4::after {
     }
 
     .gallery ul {
-        height: 350px;
+        height: 250px;
         overflow-y: scroll;
     }
 
