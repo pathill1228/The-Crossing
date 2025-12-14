@@ -132,16 +132,13 @@ h4::after {
     }
 
     .gallery ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        /* centers items even when some are hidden */
-        gap: 16px;
-        padding: 0;
-        /* REMOVE default ul padding */
-        margin: 0 auto;
-        list-style: none;
-        /* remove bullets */
+        height: 350px;
+        overflow-y: scroll;
+    }
+
+    .info {
+        height: 350px;
+        overflow-y: scroll;
     }
 
 }
